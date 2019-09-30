@@ -10,13 +10,13 @@ import kotlinx.android.synthetic.main.dashboard.*
 
 
 
-class Dashboard : AppCompatActivity() {
+class Dashboard : DebugActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.dashboard)
         btniniciar.setOnClickListener {cadastrarcliente() }
-        cadastrarvaiculo.setOnClickListener {cadastrarvaiculo() }
+        cadastrarveiculo.setOnClickListener {cadastrarveiculo() }
 
         val params = intent.extras
         val nome = params?.getString("nome_usuario")
@@ -29,9 +29,7 @@ class Dashboard : AppCompatActivity() {
     }
 
 
-    fun cadastrarvaiculo(){
-
-
+    fun cadastrarveiculo(){
         var intent = Intent(this, CadastrarVeiculo::class.java)
         var params = Bundle ()
         params.putString("nome_usuario", "nome")

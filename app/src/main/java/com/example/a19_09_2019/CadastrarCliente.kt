@@ -9,7 +9,7 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.cadastrarcliente.*
 
 
-class CadastrarCliente : AppCompatActivity() {
+class CadastrarCliente : DebugActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,16 +22,14 @@ class CadastrarCliente : AppCompatActivity() {
 
         supportActionBar?.title = "Cadastrar cliente"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
     }
-
     fun cadastrarcliente(){
         var donoid = nomecliente.text.toString()
         var cpf = cpfcliente.text.toString()
 
         if (donoid.length > 3 && cpf.length > 10){
             Toast.makeText(this, "Cliente $donoid cadastrado!", Toast.LENGTH_LONG).show()
-            var intent = Intent(this, Dashboard::class.java)
+            var intent = Intent(this, Dashboard_fun::class.java)
             var params = Bundle ()
             params.putString("nome_usuario", "")
             params.putInt("numero", 10)

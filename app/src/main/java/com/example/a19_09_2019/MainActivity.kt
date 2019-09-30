@@ -5,32 +5,53 @@ import android.os.Bundle
 import android.widget.Toast
 import kotlinx.android.synthetic.main.login.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : DebugActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login)
-        btncadastrarcliente.setOnClickListener {btn()}
+        btncadastrarcliente.setOnClickListener {btn_login()}
     }
-    fun btn(){
-        var cpf = nomecliente.text.toString()
+
+    fun btn_login(){
+        var aluno = nomecliente.text.toString()
         var senha = senha.text.toString()
-        if (cpf == "" && senha == ""){
-            Toast.makeText(this, "Bem vindo ", Toast.LENGTH_LONG).show()
 
-            //Toast.makeText(this, "Clicou no botao",  Toast.LENGTH_SHORT).show()
-            //Toast.makeText(this, "Olá Breno", Toast.LENGTH_SHORT).show()
-            var intent = Intent(this, Dashboard::class.java)
-            var params = Bundle ()
-            params.putString("nome_usuario", cpf)
-            params.putInt("numero", 10)
-            params.putIntArray("array_int", intArrayOf(1,2,3))
-            intent.putExtras(params)
-            startActivity(intent)
-            //setContentView(R.layout.dashboard)
-
-
+        if (aluno == "aluno" && senha == "impacta"){
+            Toast.makeText(this, "Seja Bem Vindo $aluno",
+                Toast.LENGTH_LONG).show()
+            var intent = Intent(this, Dashboard_fun ::class.java)
+           startActivity(intent)
+        }else if(aluno != "aluno" && senha == "impacta"){
+            Toast.makeText(this, "Usuário $aluno incorreto!!",
+                Toast.LENGTH_LONG).show()
+        }else if(aluno == "aluno" && senha != "impacta"){
+            Toast.makeText(this, "Senha Inválida",
+                Toast.LENGTH_LONG).show()
         }else{
-            Toast.makeText(this, "CPF ou Senha invalidas", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Dados informados Incorretos!",
+                Toast.LENGTH_LONG).show()
         }
+
+//        if (cpf == "" && senha == ""){
+//            Toast.makeText(this, "Bem vindo ", Toast.LENGTH_LONG).show()
+//
+//            //Toast.makeText(this, "Clicou no botao",  Toast.LENGTH_SHORT).show()
+//            //Toast.makeText(this, "Olá Breno", Toast.LENGTH_SHORT).show()
+//            var intent = Intent(this, Dashboard::class.java)
+//            var params = Bundle ()
+//            params.putString("nome_usuario", cpf)
+//            params.putInt("numero", 10)
+//            params.putIntArray("array_int", intArrayOf(1,2,3))
+//            intent.putExtras(params)
+//            startActivity(intent)
+//            //setContentView(R.layout.dashboard)
+//
+//
+//        }else{
+//            Toast.makeText(this, "CPF ou Senha invalidas", Toast.LENGTH_SHORT).show()
+//        }
+
+
+
     }
 }

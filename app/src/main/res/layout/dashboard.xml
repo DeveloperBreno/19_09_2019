@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#00FFFFFF"
-        android:text="Cadastrar cliente"
+        android:text="Cadastrar Cliente"
         android:textColor="#2196F3"
         android:textSize="14sp" />
 
@@ -24,11 +24,11 @@
 
 
     <Button
-        android:id="@+id/cadastrarvaiculo"
+        android:id="@+id/cadastrarveiculo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#00FFFFFF"
-        android:text="Cadastrar vaiculo"
+        android:text="Cadastrar Veiculo"
         android:textColor="#2196F3"
         android:textSize="14sp" />
 

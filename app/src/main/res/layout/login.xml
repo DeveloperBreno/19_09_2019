@@ -19,7 +19,7 @@
         android:id="@+id/placa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="    CPF *"
+        android:text="Usuário:"
         android:textColor="#2196F3"
         android:textSize="14sp" />
 
@@ -27,8 +27,7 @@
         android:id="@+id/nomecliente"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number" />
+     />
 
     <Space
         android:layout_width="match_parent"
@@ -38,7 +37,7 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="    SENHA *"
+        android:text="Senha:"
         android:textColor="#2196F3"
         android:textSize="14sp" />
 

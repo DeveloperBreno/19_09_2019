@@ -11,12 +11,12 @@ import kotlinx.android.synthetic.main.cadastrarcliente.btncadastrarcliente
 import kotlinx.android.synthetic.main.cadastrarveiculo.*
 
 
-class CadastrarVeiculo : AppCompatActivity() {
+class CadastrarVeiculo : DebugActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.cadastrarveiculo)
-        btncadastrarvaiculo.setOnClickListener {cadastrarveiculo()}
+        btncadastrarveiculo.setOnClickListener {cadastrarveiculo()}
         val params = intent.extras
         val nome = params?.getString("nome_usuario")
         val n = params?.getString("numero")
@@ -30,7 +30,7 @@ class CadastrarVeiculo : AppCompatActivity() {
         var dono = donoid.text.toString()
         if (placa.length > 5 && dono.length > 4){
             Toast.makeText(this, "veiculo $placa foi cadastrado para o cliente $dono", Toast.LENGTH_LONG).show()
-            var intent = Intent(this, Dashboard::class.java)
+            var intent = Intent(this, Dashboard_fun::class.java)
             var params = Bundle ()
             params.putString("nome_usuario", "")
             params.putInt("numero", 10)
