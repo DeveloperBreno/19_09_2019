@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Dashboard_fun">
+
+
+    <Space
+        android:layout_width="430dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/btn_veiculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:text="Cadastrar Veiculos"
+        android:textColor="#2196F3"
+        android:textSize="14sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="29dp" />
+
+    <Button
+        android:id="@+id/btn_cliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:text="Cadastrar Clientes"
+        android:textColor="#2196F3"
+        android:textSize="14sp" />
+
+    <Space
+        android:layout_width="430dp"
+        android:layout_height="95dp" />
+
+
+    <Button
+        android:id="@+id/btn_list_clientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:text="Clientes"
+        android:textColor="#2196F3"
+        android:textSize="14sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="29dp" />
+
+
+    <Button
+        android:id="@+id/btn_list_veiculos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:text="Veículos"
+        android:textColor="#2196F3"
+        android:textSize="14sp" />
+
+</LinearLayout>
