@@ -4,18 +4,27 @@
 
     <item
         android:id="@+id/action_buscar"
-        android:icon="@mipmap/ic_buscar_white"
-        android:title="buscar"
+        android:icon="@drawable/ic_buscar_white"
+        android:title="Buscar"
+        app:actionViewClass="android.support.v7.widget.SearchView"
         app:showAsAction="always" />
 
     <item
         android:id="@+id/action_atualizar"
-        android:icon="@mipmap/ic_atualizar_white"
+        android:icon="@drawable/ic_atualizar_white"
         android:title="Atualizar"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/action_config"
-        android:title="Configuracoes"
+        android:icon="@drawable/ic_atualizar_white"
+        android:title="Configurações"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_sair"
+        android:title="Sair"
+        app:showAsAction="never" />
+
+
 </menu>
