@@ -1,22 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="160dp"
-    android:background="#6ED2E0D2"
+    android:background="#000000"
+    android:divider="@drawable/bmw_headlights_lights_137326_300x168"
+    android:orientation="vertical"
     android:padding="16dp">
 
     <ImageView
-        android:layout_width="229dp"
+        android:layout_width="wrap_content"
         android:layout_height="107dp"
         android:padding="16dp"
-        app:srcCompat="@drawable/logo_app" />
+        app:srcCompat="@drawable/bmw_headlights_lights_137326_300x168"
+        android:contentDescription="@string/todo" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"/>
+        android:layout_width="195dp"
+        android:layout_height="39dp"
+        android:text="@string/app_name"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF" />
 
 
 </LinearLayout>

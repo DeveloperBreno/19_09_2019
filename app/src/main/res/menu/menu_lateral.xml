@@ -3,6 +3,11 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/card_Carros"
+            android:checked="true"
+            android:icon="@drawable/download"
+            android:title="Carros" />
+        <item
             android:id="@+id/nav_reparo"
             android:icon="@drawable/ic_menu_manage"
             android:title="Manutenção" />
@@ -10,16 +15,16 @@
         <item
             android:id="@+id/nav_forum"
             android:icon="@drawable/ic_forum_black"
-            android:title="Forum"
-
-            />
+            android:title="Forum"  />
 
         <item
             android:id="@+id/nav_vendedores"
             android:icon="@drawable/ic_clientes"
-            android:title="Vendedores"
+            android:title="Vendedores" />
 
-            />
+
+
+
     </group>
 
 

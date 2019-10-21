@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         var aluno = nomeCliente.text.toString()
         var senha = senhaCliente.text.toString()
 
-        if (aluno == "aluno" && senha == "impacta"){
+        if (aluno == "" && senha == ""){
             Toast.makeText(
                 this, "Seja Bem Vindo: $aluno", Toast.LENGTH_LONG).show()
             var intent = Intent(this, TelaInicialActivity ::class.java)
