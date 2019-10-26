@@ -7,6 +7,12 @@ import android.widget.ImageView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
+
+
+
+
+
+
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         var aluno = nomeCliente.text.toString()
         var senha = senhaCliente.text.toString()
 
-        if (aluno == "aluno" && senha == "impacta"){
+        if (aluno == "" && senha == ""){
             Toast.makeText(
                 this, "Seja Bem Vindo: $aluno", Toast.LENGTH_LONG).show()
             var intent = Intent(this, TelaInicialActivity ::class.java)

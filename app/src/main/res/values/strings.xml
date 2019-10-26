@@ -3,4 +3,10 @@
 
     <string name="nav_open">Aberto</string>
     <string name="nav_close">Fechado</string>
+    <string name="todo">TODO</string>
+    <string name="nome">Nome*</string>
+    <string name="cpf">CPF *</string>
+    <string name="endere_o">Endereço</string>
+    <string name="telefones">Telefones</string>
+    <string name="cadastrar">Cadastrar</string>
 </resources>
