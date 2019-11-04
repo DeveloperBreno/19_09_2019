@@ -1,4 +1,4 @@
-package br.com.fernandosousa.lmsapp
+package br.com.impacta.ope
 
 import android.app.Application
 import java.lang.IllegalStateException
