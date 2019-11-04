@@ -16,31 +16,29 @@ object VeiculosService {
 
     fun getCarros(context: Context): List<Veiculos> {
 
-        val veiculos = mutableListOf<Veiculos>()
+        val dao = DatabaseManager.getVeiculosDAO()
 
-        val url = "$host/veiculos"
-        val json = HttpHelper.get(url)
-
-        Log.d(TAG, json)
-
-        return parseJson<List<Veiculos>>(json)
+        return dao.findAll()
     }
 
 
-    fun save(veiculo: Veiculos) : Response{
-        val  veiculo_json = veiculo.toJson()
-        val retorno = HttpHelper.post("$host/veiculos", veiculo_json)
+    fun save(veiculo: Veiculos) : Response? {
 
-        return parseJson <Response>(retorno)
+        val dao = DatabaseManager.getVeiculosDAO()
+
+        dao.insert(veiculo)
+
+        return null
     }
 
 
-    fun delete(veiculo: Veiculos): Response {
-        Log.d(TAG, veiculo.id.toString())
-        val url = "$host/veiculos/${veiculo.id}"
-        val json = HttpHelper.delete(url)
-        Log.d(TAG, json)
-        return parseJson(json)
+    fun delete(veiculo: Veiculos): Response? {
+
+        val dao = DatabaseManager.getVeiculosDAO()
+
+        dao.delete(veiculo)
+
+        return null
     }
 
 
@@ -50,21 +48,6 @@ object VeiculosService {
         return Gson().fromJson<T>(json, type)
     }
 
-//    fun getCarros(): List<Veiculos> {
-//        val carros = mutableListOf<Veiculos>()
-//
-//        // criar 10 disciplinas
-//        for (i in 1..10) {
-//            val d = Veiculos()
-//            d.nomeModelo = "Veiculos $i"
-//            d.placa = "Ementa Veiculos $i"
-//            d.CarroMaster = "carros fodas $i"
-//            d.foto = "https://cdn.wallpapersafari.com/89/14/F2mIx0.jpg"
-//            carros.add(d)
-//        }
-//
-//        return carros
-//    }
 }
 
 

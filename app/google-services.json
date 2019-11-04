@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "237523993709",
+    "firebase_url": "https://sed-oficina.firebaseio.com",
+    "project_id": "sed-oficina",
+    "storage_bucket": "sed-oficina.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237523993709:android:8cd298c4fc34c5ad186b64",
+        "android_client_info": {
+          "package_name": "br.com.impacta.ope"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237523993709-dq6l2rbla0l8g1cbcj83svt4m0d64o71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbg21Wk9VVwv66m-fQZRmLK4QLdeGQwvA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "237523993709-dq6l2rbla0l8g1cbcj83svt4m0d64o71.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
