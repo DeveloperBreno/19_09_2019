@@ -15,8 +15,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".VeiculosActivity"></activity>
         <activity android:name=".VeiculoNewActivity" />
-        <activity android:name=".CriarConta" />
-        <activity android:name=".RecuperaSenha" />
         <activity
             android:name=".TelaInicialActivity"
             android:theme="@style/AppTheme.Toolbar" />
