@@ -107,8 +107,7 @@ class TelaInicialActivity : AppCompatActivity(),
 
 
         } else if (id == R.id.action_config) {
-            makeText1(this, "Configurações", Toast.LENGTH_SHORT).show()
-
+        makeText1(this, "Configurações", Toast.LENGTH_SHORT).show()
 
         } else if (id == R.id.action_incluir) {
             var it = Intent(this, VeiculoNewActivity::class.java)
