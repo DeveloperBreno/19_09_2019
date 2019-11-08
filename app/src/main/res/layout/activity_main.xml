@@ -62,24 +62,14 @@
 
     </FrameLayout>
 
-    <Button
-        android:id="@+id/btn_register_account"
+    <ImageView
+        android:id="@+id/imagemLogin"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/login_button_bg"
-        android:text="@string/create_account"
-        android:textColor="@color/colorAccent"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/oficina" />
 
-    <Button
-        android:id="@+id/btn_esqueciSenha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/colorAccent"
-        android:text="@string/forgot_your_login_info"
-        android:layout_marginTop="40dp"
-        android:layout_gravity="center_horizontal"/>
+
+
 
 </LinearLayout>
